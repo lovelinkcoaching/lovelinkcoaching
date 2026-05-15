@@ -282,6 +282,42 @@
       .about-photo { display: none; }
       .journey-cta { padding: 32px 20px; }
     }
+
+    /* CAROUSEL */
+    .carousel-wrapper { position: relative; }
+    .carousel-track {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      min-height: 160px;
+    }
+    .carousel-nav {
+      display: flex; align-items: center; justify-content: center;
+      gap: 16px; margin-top: 32px;
+    }
+    .carousel-btn {
+      background: var(--rose); color: #fff;
+      border: none; border-radius: 50%;
+      width: 40px; height: 40px;
+      font-size: 18px; cursor: pointer;
+      box-shadow: 0 3px 12px rgba(181,82,106,0.25);
+      transition: background 0.2s, transform 0.15s;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .carousel-btn:hover { background: #9a3f57; transform: scale(1.08); }
+    .carousel-dots { display: flex; gap: 8px; align-items: center; }
+    .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--rose-mid); cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .dot.active { background: var(--rose); transform: scale(1.3); }
+    @media (max-width: 768px) {
+      .carousel-track { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .carousel-track { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
@@ -310,34 +346,118 @@
     <div class="recognition-header">
       <div class="tag">Does this sound like you?</div>
       <h2 class="section-title">You're Ready for Something Real.<br><em>Does Any of This Feel Familiar?</em></h2>
-      <p class="section-sub">It's not that she picks the wrong men on purpose. It's that no one ever taught her how to choose — before her heart was already in.</p>
+      <p class="section-sub">You're not broken. You're just ready to do this differently.</p>
     </div>
-    <div class="recognition-list">
-      <div class="rec-item">
-        <strong>💔 You miss him, even though you know better.</strong>
-        Your head and heart aren't on the same page. You know he wasn't right for you. But your heart didn't get the memo.
+    <!-- CAROUSEL WRAPPER -->
+    <div class="carousel-wrapper">
+      <div class="carousel-track" id="recCarousel">
+        <div class="rec-item">
+          <strong>💔 You miss him, even though you know better.</strong>
+          Your head and heart aren't on the same page. You know he wasn't right for you. But your heart didn't get the memo.
+        </div>
+        <div class="rec-item">
+          <strong>🔄 Different person, same story.</strong>
+          The names change. The feelings don't. You keep arriving at the same place and wondering how you got here again.
+        </div>
+        <div class="rec-item">
+          <strong>✨ You're ready to date again, but you want to do it differently.</strong>
+          This time you want clarity before you commit. You want to choose with your whole self, not just your heart.
+        </div>
+        <div class="rec-item">
+          <strong>🛡️ You want to protect your heart without closing it.</strong>
+          You're not bitter. You still believe in love. You just never want to go through that kind of pain again.
+        </div>
+        <div class="rec-item">
+          <strong>🔍 You attract the same type, even when you try not to.</strong>
+          You've dated different people on the outside. But somehow, the dynamic always feels the same. You're starting to wonder if it's something in you.
+        </div>
+        <div class="rec-item">
+          <strong>💡 You're self-aware, but awareness alone hasn't been enough.</strong>
+          You've read the books, listened to the podcasts, talked it through with friends. You understand a lot. But understanding it and actually changing it are two different things.
+        </div>
+        <div class="rec-item">
+          <strong>🚧 You struggle to set and hold healthy boundaries.</strong>
+          You know what you should say. But in the moment, you soften it, take it back, or stay quiet altogether, and resent yourself for it later.
+        </div>
+        <div class="rec-item">
+          <strong>😟 The idea of getting attached again feels scary.</strong>
+          You want to open up. But a part of you is always bracing for the moment things fall apart. Getting close feels like risk.
+        </div>
+        <div class="rec-item">
+          <strong>🚩 You worry about missing red flags again.</strong>
+          You've been blindsided before. Now you find yourself scanning for warning signs, wondering if you'll catch them in time or fall for the same thing twice.
+        </div>
+        <div class="rec-item">
+          <strong>💗 Sometimes you wonder if you're even lovable.</strong>
+          Not always. But after everything, a quiet voice sometimes asks if there's something about you that keeps you from having the love you want.
+        </div>
+        <div class="rec-item">
+          <strong>🪞 Your confidence took a hit and hasn't fully come back.</strong>
+          You used to feel more sure of yourself. The breakup shook something loose, and rebuilding that sense of self has been harder than you expected.
+        </div>
+        <div class="rec-item">
+          <strong>🤔 You're not sure you'd recognize a truly healthy relationship.</strong>
+          You've never really had a clear picture of what that looks like from the inside. You're not sure you'd know it if you found it.
+        </div>
+        <div class="rec-item">
+          <strong>🌊 Your emotions feel bigger than you know what to do with.</strong>
+          Some days you're fine. Other days a song, a memory, or a text sends you somewhere you weren't expecting. Processing all of this is exhausting.
+        </div>
       </div>
-      <div class="rec-item">
-        <strong>🔄 Different person, same story.</strong>
-        The names change. The feelings don't. You keep arriving at the same place and wondering how you got here again.
-      </div>
-      <div class="rec-item">
-        <strong>✨ You're ready to date again, but you want to do it differently.</strong>
-        This time you want clarity before you commit. You want to choose with your whole self, not just your heart.
-      </div>
-      <div class="rec-item">
-        <strong>🛡️ You want to protect your heart without closing it.</strong>
-        You're not bitter. You still believe in love. You just never want to go through that kind of pain again.
-      </div>
-      <div class="rec-item">
-        <strong>🔍 You attract the same type, even when you try not to.</strong>
-        You've dated different people on the outside. But somehow, the dynamic always feels the same. You're starting to wonder if it's something in you.
-      </div>
-      <div class="rec-item">
-        <strong>💡 You're self-aware, but awareness alone hasn't been enough.</strong>
-        You've read the books, listened to the podcasts, talked it through with friends. You understand a lot. But understanding it and actually changing it are two different things.
+      <div class="carousel-nav">
+        <button class="carousel-btn" id="prevBtn" onclick="moveCarousel(-1)">&#8592;</button>
+        <div class="carousel-dots" id="carouselDots"></div>
+        <button class="carousel-btn" id="nextBtn" onclick="moveCarousel(1)">&#8594;</button>
       </div>
     </div>
+
+    <script>
+      const track = document.getElementById('recCarousel');
+      const dotsContainer = document.getElementById('carouselDots');
+      const items = track.querySelectorAll('.rec-item');
+      const total = items.length;
+      const perPage = window.innerWidth < 600 ? 1 : window.innerWidth < 900 ? 2 : 3;
+      let current = 0;
+      const pages = Math.ceil(total / perPage);
+
+      function getPerPage() {
+        return window.innerWidth < 600 ? 1 : window.innerWidth < 900 ? 2 : 3;
+      }
+
+      function renderDots() {
+        dotsContainer.innerHTML = '';
+        const pp = getPerPage();
+        const pg = Math.ceil(total / pp);
+        for (let i = 0; i < pg; i++) {
+          const d = document.createElement('span');
+          d.className = 'dot' + (i === current ? ' active' : '');
+          d.onclick = () => { current = i; renderCarousel(); };
+          dotsContainer.appendChild(d);
+        }
+      }
+
+      function renderCarousel() {
+        const pp = getPerPage();
+        items.forEach((item, i) => {
+          item.style.display = (i >= current * pp && i < (current + 1) * pp) ? '' : 'none';
+        });
+        renderDots();
+      }
+
+      function moveCarousel(dir) {
+        const pp = getPerPage();
+        const pg = Math.ceil(total / pp);
+        current = (current + dir + pg) % pg;
+        renderCarousel();
+      }
+
+      window.addEventListener('resize', () => { current = 0; renderCarousel(); });
+
+      // Auto-rotate every 5 seconds
+      setInterval(() => moveCarousel(1), 5000);
+
+      renderCarousel();
+    </script>
   </div>
 </section>
 
