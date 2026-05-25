@@ -1,107 +1,637 @@
-LoveLink Coaching
-Emotional Clarity for Healthier Love
-Emotional Clarity Coaching for Women
-Why Does This Keep
-Happening to Me?
-You are not unlucky in love. You are emotionally unclear. And that is something we can actually fix.
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>LoveLink Coaching: Emotional Clarity for Healthier Love</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-Book Your Free Clarity Call
-Free call. No commitment. Just an honest conversation.
+  :root {
+    --blush: #f2e4dc;
+    --rose: #c9756c;
+    --deep: #3d1f1a;
+    --warm: #7a3f35;
+    --cream: #fdf8f5;
+    --light: #f9f0eb;
+  }
 
-Emotional Clarity Changes Who You Choose
+  html { scroll-behavior: smooth; }
 
-Does This Sound Like You?
-You already know something
-is not working.
-You confuse how strongly you feel for someone with how good he is for you.
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--cream);
+    color: var(--deep);
+    line-height: 1.7;
+  }
 
-You stay when something feels off, telling yourself it will get better.
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: rgba(253,248,245,0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(201,117,108,0.15);
+  }
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--warm);
+    letter-spacing: 0.5px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+  }
+  .nav-logo strong {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--warm);
+  }
+  .nav-tagline {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.72rem;
+    font-style: italic;
+    color: #b07070;
+    letter-spacing: 0.8px;
+    font-weight: 400;
+    margin-top: 1px;
+  }
+  .nav-cta {
+    background: var(--rose);
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .nav-cta:hover { background: var(--warm); }
 
-You overthink every text, every silence, every mixed signal.
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 24px 80px;
+    background: linear-gradient(160deg, #fdf3ee 0%, #f7e6dd 50%, #eeddd4 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    width: 600px; height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201,117,108,0.12) 0%, transparent 70%);
+    top: -100px; right: -100px;
+    pointer-events: none;
+  }
+  .hero-inner { max-width: 780px; position: relative; z-index: 1; }
+  .hero-eyebrow {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--rose);
+    margin-bottom: 24px;
+    padding: 6px 20px;
+    border: 1px solid rgba(201,117,108,0.4);
+    border-radius: 30px;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    line-height: 1.15;
+    color: var(--deep);
+    margin-bottom: 28px;
+    font-weight: 700;
+  }
+ LoveLink Coaching
+Book Free Call
+Relationship Coaching for Women 30+
+The Only Thing Worse Than Heartache Is Going Through It Again When It Was Preventable.
+You've already felt what it costs to love the wrong person. You don't have to feel it again.
+  .hero h1 em { font-style: italic; color: var(--rose); }
+  .hero-sub {
+    font-size: clamp(1rem, 2.5vw, 1.18rem);
+    color: #6b4040;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+  }
+  .btn-primary {
+    display: inline-block;
+    background: var(--rose);
+    color: #fff;
+    padding: 18px 44px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 8px 30px rgba(201,117,108,0.35);
+  }
+  .btn-primary:hover {
+    background: var(--warm);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(201,117,108,0.45);
+  }
+  .hero-note {
+    margin-top: 16px;
+    font-size: 0.82rem;
+    color: #a07060;
+  }
 
-You have read the books, tried the advice, and still end up in the same place.
+  /* QUOTE STRIP */
+  .quote-strip {
+    background: var(--deep);
+    color: #f2ddd8;
+    text-align: center;
+    padding: 32px 24px;
+  }
+  .quote-strip p {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
 
-Calm, consistent love feels too quiet. Intensity feels like passion.
+  /* SECTIONS */
+  section { padding: 90px 24px; }
+  .container { max-width: 900px; margin: 0 auto; }
+  .section-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--rose);
+    margin-bottom: 16px;
+    display: block;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    color: var(--deep);
+    line-height: 1.25;
+    margin-bottom: 20px;
+  }
+  .section-title em { font-style: italic; color: var(--rose); }
+  .section-body {
+    font-size: 1.05rem;
+    color: #5a3535;
+    line-height: 1.85;
+    max-width: 680px;
+  }
 
-You abandon yourself trying to hold onto a connection that is not holding you.
+  /* PAIN SECTION */
+  .pain-section { background: var(--light); }
+  .pain-intro { text-align: center; margin-bottom: 52px; }
+  .pain-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+    margin-bottom: 52px;
+  }
+  .pain-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 28px 24px;
+    border-left: 4px solid var(--rose);
+    box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .pain-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.09);
+  }
+  .pain-card p {
+    font-size: 0.97rem;
+    color: #4a2a2a;
+    line-height: 1.65;
+  }
+  .pain-closing {
+    text-align: center;
+    max-width: 580px;
+    margin: 0 auto;
+  }
+  .pain-closing p {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--warm);
+    line-height: 1.7;
+  }
 
-If you recognize yourself here, it is not because you are broken. It is because no one ever showed you what was happening underneath.
+  /* TRUTH SECTION */
+  .truth-section {
+    background: linear-gradient(135deg, #3d1f1a 0%, #5a2e28 100%);
+    color: #f2ddd8;
+    text-align: center;
+  }
+  .truth-section .section-title { color: #f2ddd8; }
+  .truth-section .section-title em { color: #e8a090; }
+  .truth-body {
+    font-size: 1.1rem;
+    color: #d4b0a8;
+    max-width: 600px;
+    margin: 0 auto 48px;
+    line-height: 1.9;
+  }
 
-The Hard Truth
-The problem is not
-the men you are choosing.
-It is what is driving the choice. You kept choosing from confusion instead of clarity. Confusion says: he makes me feel something, that must mean something. Clarity says: but does he make you feel safe? Respected? Like yourself? Most relationship advice teaches you how to attract the right person. What it does not teach you is how to see clearly before your emotions take over. That gap is where everything goes wrong, and it is exactly where we do our work together.
+  /* TRANSFORMATION SECTION */
+  .transform-section { background: #fff; }
+  .transform-grid {
+    display: grid;
+    grid-template-columns: 1fr 60px 1fr;
+    gap: 0;
+    align-items: start;
+    margin-top: 48px;
+    margin-bottom: 52px;
+  }
+  .transform-col h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid;
+  }
+  .transform-col.before h3 { color: #a05050; border-color: #d49090; }
+  .transform-col.after h3 { color: var(--warm); border-color: var(--rose); }
+  .transform-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 12px;
+    font-size: 1.8rem;
+    color: var(--rose);
+  }
+  .transform-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    font-size: 0.97rem;
+    color: #5a3535;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+  }
+  .transform-item:last-child { border-bottom: none; }
+  .dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .before .dot { background: #c09090; }
+  .after .dot { background: var(--rose); }
+  .transform-cta {
+    text-align: center;
+    padding-top: 8px;
+  }
+  .transform-cta p {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--warm);
+    margin-bottom: 28px;
+  }
 
-I Want to Understand Why
-The Shift
-What becomes possible
-when you choose from clarity.
-This is not about lowering your standards or settling. It is about becoming the woman who can finally tell the difference.
+  /* ABOUT SECTION */
+  .about-section {
+    background: linear-gradient(160deg, #fdf3ee, #f5e5db);
+  }
+  .about-inner {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  .about-image {
+    border-radius: 24px;
+    overflow: hidden;
+    width: 280px;
+    height: 280px;
+    background: linear-gradient(145deg, #e8c5bb, #c9a09a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .about-image-placeholder {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: rgba(61,31,26,0.4);
+    text-align: center;
+    padding: 24px;
+  }
+  .about-text .section-body { max-width: 100%; margin-bottom: 20px; }
+  .about-quote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--rose);
+    border-left: 3px solid var(--rose);
+    padding-left: 16px;
+    margin: 24px 0 20px;
+    line-height: 1.6;
+  }
+  .about-signature {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: var(--rose);
+    margin-top: 12px;
+  }
 
-Right Now
-Attached before you feel safe
-Anxious, overthinking, second-guessing
-Mistaking intensity for love
-Staying when you should go
-Abandoning yourself to keep the peace
-Repeating the same painful pattern
-→
-After the Work
-Grounded and emotionally clear
-Calm, confident, self-trusting
-Able to feel AND think at the same time
-Leaving when it is not right, before it costs you
-Choosing love that actually chooses you
-Free from the cycle, for good
-How do you get from here to there? That is what the clarity call is for.
+  /* TESTIMONIALS */
+  .testimonials-section { background: var(--deep); color: #f2ddd8; }
+  .testimonials-section .section-title { color: #f2ddd8; text-align: center; }
+  .testimonials-section .section-label { text-align: center; display: block; }
+  .testi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 48px;
+  }
+  .testi-card {
+    background: rgba(255,255,255,0.07);
+    border-radius: 20px;
+    padding: 36px 28px;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .testi-quote-mark {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: rgba(201,117,108,0.3);
+    line-height: 1;
+    margin-bottom: 12px;
+    display: block;
+  }
+  .testi-card p {
+    font-size: 0.97rem;
+    color: #e0c0b8;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  .testi-name {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #e8a090;
+    letter-spacing: 0.5px;
+  }
+  .stars { color: #e8a090; font-size: 0.9rem; margin-bottom: 12px; }
 
-💗
-Your Coach
-Hi, I'm Diem.
-When it came to love, I used to have no clarity.
+  /* GUARANTEE */
+  .guarantee-section { background: var(--light); text-align: center; }
+  .guarantee-box {
+    max-width: 620px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    padding: 56px 48px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+    border-top: 4px solid var(--rose);
+  }
+  .guarantee-icon { font-size: 3rem; margin-bottom: 20px; display: block; }
+  .guarantee-box h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--deep);
+    margin-bottom: 16px;
+  }
+  .guarantee-box p {
+    font-size: 1rem;
+    color: #6a4040;
+    line-height: 1.8;
+  }
 
-Like many women, I simply wanted to love and be loved. But instead of feeling secure and fulfilled, I often felt emotionally anxious, confused, lonely, and stuck repeating the same painful patterns.
+  /* FINAL CTA */
+  .final-cta {
+    background: linear-gradient(135deg, #3d1f1a 0%, #6a3030 100%);
+    color: #f2ddd8;
+    text-align: center;
+    padding: 100px 24px;
+  }
+  .final-cta .section-title { color: #f2ddd8; }
+  .final-cta .section-title em { color: #e8a090; }
+  .final-cta-sub {
+    font-size: 1.1rem;
+    color: #d4b0a8;
+    max-width: 520px;
+    margin: 0 auto 44px;
+    line-height: 1.8;
+  }
+  .final-cta .btn-primary {
+    background: #fff;
+    color: var(--deep);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+  }
+  .final-cta .btn-primary:hover {
+    background: var(--blush);
+    color: var(--deep);
+  }
+  .final-note {
+    margin-top: 20px;
+    font-size: 0.82rem;
+    color: #b09090;
+  }
 
-After enough heartbreak, I decided to stop dating for a while and look deeper within myself. That decision changed everything.
+  /* FOOTER */
+  footer {
+    background: var(--deep);
+    color: #a08080;
+    text-align: center;
+    padding: 32px 24px;
+    font-size: 0.82rem;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  footer a { color: #c09090; text-decoration: none; }
 
-I have always been a deep thinker and analyzer. I naturally look for patterns, connections, and root causes beneath the surface. As I started reflecting on my own experiences, I realized something: what I was repeating was not bad luck. There were deeper emotional patterns driving my choices. And once I could finally see them clearly, everything began to make sense.
+  /* RESPONSIVE */
+  @media (max-width: 700px) {
+    nav { padding: 16px 20px; }
+    .transform-grid { grid-template-columns: 1fr; gap: 32px; }
+    .transform-arrow { display: none; }
+    .about-inner { grid-template-columns: 1fr; }
+    .about-image { display: none; }
+    .guarantee-box { padding: 36px 24px; }
+  }
+</style>
+</head>
+<body>
 
-For years, I have been passionate about psychology, emotional healing, relationships, and self-awareness. Conversations about human behavior, healing, and transformation have always fascinated me. That passion became part of my own healing journey, and eventually, my life's purpose.
+<!-- NAV -->
+<nav>
+  <span class="nav-logo"><strong>LoveLink Coaching</strong><span class="nav-tagline">Emotional Clarity for Healthier Love</span></span>
+</nav>
 
-Today, I help women understand themselves more deeply, recognize unhealthy patterns before they lead to more heartbreak, and learn how to choose love with clarity, confidence, and emotional health.
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-eyebrow">Emotional Clarity Coaching for Women</span>
+    <h1>Why Does This Keep<br><em>Happening to Me?</em></h1>
+    <p class="hero-sub">You are not unlucky in love. You are emotionally unclear. And that is something we can actually fix.</p>
+    <a href="https://calendly.com/lovelinkcoaching" target="_blank" class="btn-primary">Book Your Free Clarity Call</a>
+    <p class="hero-note">Free call. No commitment. Just an honest conversation.</p>
+  </div>
+</section>
 
-I truly believe healthy love becomes possible when we stop choosing from fear, confusion, or emotional survival, and start choosing from self-awareness and self-worth.
+<!-- QUOTE STRIP -->
+<div class="quote-strip">
+  <p>Emotional Clarity Changes Who You Choose</p>
+</div>
 
-"I help women stop repeating painful relationship patterns and start choosing love with clarity and confidence."
+<!-- PAIN SECTION -->
+<section class="pain-section">
+  <div class="container">
+    <div class="pain-intro">
+      <span class="section-label">Does This Sound Like You?</span>
+      <h2 class="section-title">You already know something<br>is <em>not working.</em></h2>
+    </div>
+    <div class="pain-grid">
+      <div class="pain-card"><p>You confuse how strongly you feel for someone with how good he is for you.</p></div>
+      <div class="pain-card"><p>You stay when something feels off, telling yourself it will get better.</p></div>
+      <div class="pain-card"><p>You overthink every text, every silence, every mixed signal.</p></div>
+      <div class="pain-card"><p>You have read the books, tried the advice, and still end up in the same place.</p></div>
+      <div class="pain-card"><p>Calm, consistent love feels too quiet. Intensity feels like passion.</p></div>
+      <div class="pain-card"><p>You abandon yourself trying to hold onto a connection that is not holding you.</p></div>
+    </div>
+    <div class="pain-closing">
+      <p>If you recognize yourself here, it is not because you are broken. It is because no one ever showed you what was happening underneath.</p>
+    </div>
+  </div>
+</section>
 
-Diem Nguyen
+<!-- TRUTH SECTION -->
+<section class="truth-section">
+  <div class="container">
+    <span class="section-label" style="color:#e8a090; text-align:center; display:block;">The Hard Truth</span>
+    <h2 class="section-title">The problem is not<br>the <em>men you are choosing.</em></h2>
+    <p class="truth-body">It is what is driving the choice. You kept choosing from confusion instead of clarity. Confusion says: he makes me feel something, that must mean something. Clarity says: but does he make you feel safe? Respected? Like yourself? Most relationship advice teaches you how to attract the right person. What it does not teach you is how to see clearly before your emotions take over. That gap is where everything goes wrong, and it is exactly where we do our work together.</p>
+    <a href="https://calendly.com/lovelinkcoaching" target="_blank" class="btn-primary" style="background:var(--rose); display:inline-block;">I Want to Understand Why</a>
+  </div>
+</section>
 
-Certified Coach, LoveLink Coaching
+<!-- TRANSFORMATION -->
+<section class="transform-section">
+  <div class="container">
+    <span class="section-label">The Shift</span>
+    <h2 class="section-title">What becomes possible<br>when you <em>choose from clarity.</em></h2>
+    <p class="section-body">This is not about lowering your standards or settling. It is about becoming the woman who can finally tell the difference.</p>
+    <div class="transform-grid">
+      <div class="transform-col before">
+        <h3>Right Now</h3>
+        <div class="transform-item"><span class="dot"></span>Attached before you feel safe</div>
+        <div class="transform-item"><span class="dot"></span>Anxious, overthinking, second-guessing</div>
+        <div class="transform-item"><span class="dot"></span>Mistaking intensity for love</div>
+        <div class="transform-item"><span class="dot"></span>Staying when you should go</div>
+        <div class="transform-item"><span class="dot"></span>Abandoning yourself to keep the peace</div>
+        <div class="transform-item"><span class="dot"></span>Repeating the same painful pattern</div>
+      </div>
+      <div class="transform-arrow">&#8594;</div>
+      <div class="transform-col after">
+        <h3>After the Work</h3>
+        <div class="transform-item"><span class="dot"></span>Grounded and emotionally clear</div>
+        <div class="transform-item"><span class="dot"></span>Calm, confident, self-trusting</div>
+        <div class="transform-item"><span class="dot"></span>Able to feel AND think at the same time</div>
+        <div class="transform-item"><span class="dot"></span>Leaving when it is not right, before it costs you</div>
+        <div class="transform-item"><span class="dot"></span>Choosing love that actually chooses you</div>
+        <div class="transform-item"><span class="dot"></span>Free from the cycle, for good</div>
+      </div>
+    </div>
+    <div class="transform-cta">
+      <p>How do you get from here to there? That is what the clarity call is for.</p>
+    </div>
+  </div>
+</section>
 
-Client Results
-Real women. Real clarity.
-"
-★★★★★
-I spent years thinking I just had bad luck with men. Working with Diem helped me see I was not unlucky. I finally understood what was actually driving my choices. That awareness alone changed everything.
+<!-- ABOUT -->
+<section class="about-section">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-image">
+        <span style="font-size:5rem;">💗</span>
+      </div>
+      <div class="about-text">
+        <span class="section-label">Your Coach</span>
+        <h2 class="section-title">Hi, I'm <em>Diem.</em></h2>
+        <p class="section-body">When it came to love, I used to have no clarity.</p>
+        <p class="section-body">Like many women, I simply wanted to love and be loved. But instead of feeling secure and fulfilled, I often felt emotionally anxious, confused, lonely, and stuck repeating the same painful patterns.</p>
+        <p class="section-body">After enough heartbreak, I decided to stop dating for a while and look deeper within myself. That decision changed everything.</p>
+        <p class="section-body">I have always been a deep thinker and analyzer. I naturally look for patterns, connections, and root causes beneath the surface. As I started reflecting on my own experiences, I realized something: what I was repeating was not bad luck. There were deeper emotional patterns driving my choices. And once I could finally see them clearly, everything began to make sense.</p>
+        <p class="section-body">For years, I have been passionate about psychology, emotional healing, relationships, and self-awareness. Conversations about human behavior, healing, and transformation have always fascinated me. That passion became part of my own healing journey, and eventually, my life's purpose.</p>
+        <p class="section-body">Today, I help women understand themselves more deeply, recognize unhealthy patterns before they lead to more heartbreak, and learn how to choose love with clarity, confidence, and emotional health.</p>
+        <p class="section-body">I truly believe healthy love becomes possible when we stop choosing from fear, confusion, or emotional survival, and start choosing from self-awareness and self-worth.</p>
+        <p class="about-quote">"I help women stop repeating painful relationship patterns and start choosing love with clarity and confidence."</p>
+        <p class="about-signature">Diem Nguyen</p>
+        <p style="font-size:0.85rem; color:#8a5050; margin-top:4px;">Certified Coach, LoveLink Coaching</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-Janet P.
-"
-★★★★★
-I used to think the intensity was the love. I had no idea what was underneath that feeling until Diem helped me see it. I feel so much more grounded now. I can think clearly instead of just reacting.
+<!-- TESTIMONIALS -->
+<section class="testimonials-section">
+  <div class="container">
+    <span class="section-label">Client Results</span>
+    <h2 class="section-title">Real women. <em>Real clarity.</em></h2>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <span class="testi-quote-mark">"</span>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>I spent years thinking I just had bad luck with men. Working with Diem helped me see I was not unlucky. I finally understood what was actually driving my choices. That awareness alone changed everything.</p>
+        <span class="testi-name">Janet P.</span>
+      </div>
+      <div class="testi-card">
+        <span class="testi-quote-mark">"</span>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>I used to think the intensity was the love. I had no idea what was underneath that feeling until Diem helped me see it. I feel so much more grounded now. I can think clearly instead of just reacting.</p>
+        <span class="testi-name">Regina J.</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-Regina J.
-🙏
-My Promise to You
-If after our work together you do not feel more clarity and confidence in your relationship choices, I will continue coaching you at no additional cost. You have nothing to lose, and the right relationship to gain.
+<!-- GUARANTEE -->
+<section class="guarantee-section">
+  <div class="container">
+    <div class="guarantee-box">
+      <span class="guarantee-icon">&#128591;</span>
+      <h2>My Promise to You</h2>
+      <p>If after our work together you do not feel more clarity and confidence in your relationship choices, I will continue coaching you at no additional cost. You have nothing to lose, and the right relationship to gain.</p>
+    </div>
+  </div>
+</section>
 
-Ready to Find Out Why?
-The first step is just
-an honest conversation.
-No pressure. No pitch. Just a real conversation about what has been happening and whether this work is right for you.
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <span class="section-label" style="color:#e8a090;">Ready to Find Out Why?</span>
+    <h2 class="section-title">The first step is just<br><em>an honest conversation.</em></h2>
+    <p class="final-cta-sub">No pressure. No pitch. Just a real conversation about what has been happening and whether this work is right for you.</p>
+    <a href="https://calendly.com/lovelinkcoaching" target="_blank" class="btn-primary">Book Your Free Clarity Call</a>
+  </div>
+</section>
 
-Book Your Free Clarity Call
-LoveLink Coaching: Emotional Clarity for Healthier Love
+<!-- FOOTER -->
+<footer>
+  <p style="margin-bottom:8px; font-family:'Playfair Display',serif; font-style:italic; font-size:1rem; color:#c09090;">LoveLink Coaching: Emotional Clarity for Healthier Love</p>
+  <p>Emotional Clarity Coaching for Women | <a href="https://lovelinkcoaching.com">lovelinkcoaching.com</a></p>
+  <p style="margin-top:8px;">&copy; 2026 Diem Nguyen. All rights reserved.</p>
+</footer>
 
-Emotional Clarity Coaching for Women | lovelinkcoaching.com
-
-© 2026 Diem Nguyen. All rights reserved.
+</body>
+</html>
