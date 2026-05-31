@@ -140,52 +140,52 @@
   .story-truth p strong { color: var(--deep); font-weight: 600; }
 
   /* BRIDGE */
-  .story-bridge { margin-bottom: 40px; }
-  .story-bridge p {
+  .story-plain { margin-bottom: 0; }
+  .story-plain p {
     font-size: 1.05rem; color: var(--muted);
-    line-height: 1.85; margin-bottom: 16px;
-    text-align: center;
+    line-height: 1.9; margin-bottom: 18px;
+    text-align: center; max-width: 620px; margin-left: auto; margin-right: auto;
   }
-  .story-bridge p strong { color: var(--deep); }
-  .signs-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 14px;
-    margin: 28px 0;
+  .story-plain p:last-child { margin-bottom: 0; }
+  .clarity-body {
+    max-width: 660px;
+    margin: 48px auto 0;
   }
-  .sign-card {
-    background: var(--light);
-    border-radius: 14px;
-    padding: 22px 22px;
-    display: flex; align-items: center; gap: 14px;
-    border: 1px solid rgba(201,117,108,0.2);
+  .clarity-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    font-weight: 700;
+    color: var(--deep);
+    line-height: 1.2;
+    margin-bottom: 24px;
   }
-  .sign-icon { font-size: 1.4rem; flex-shrink: 0; }
-  .sign-text { font-size: 0.97rem; color: var(--deep); font-weight: 500; line-height: 1.4; }
-  .story-cycle {
-    text-align: center;
-    font-size: 1.05rem; color: var(--muted); line-height: 1.85;
-    margin-bottom: 10px;
+  .clarity-heading em {
+    font-style: italic;
+    color: var(--rose);
+    font-weight: 400;
+  }
+  .clarity-body p {
+    font-size: 1rem;
+    color: var(--muted);
+    line-height: 1.9;
+    margin-bottom: 16px;
   }
 
   /* CLARITY CLOSE */
   .clarity-close {
-    background: var(--blush);
-    border-radius: 24px;
-    padding: 52px 48px;
     text-align: center;
-    margin-top: 48px;
-    border: 1px solid rgba(201,117,108,0.2);
+    margin-top: 56px;
+    padding: 0 16px;
   }
   .clarity-close h3 {
     font-family: 'Playfair Display', serif;
     font-size: clamp(1.3rem, 3vw, 2rem);
-    color: var(--deep); margin-bottom: 20px; line-height: 1.35;
+    color: var(--deep); margin-bottom: 18px; line-height: 1.4;
   }
   .clarity-close h3 em { font-style: italic; color: var(--rose); }
   .clarity-close p {
-    font-size: 1.02rem; color: var(--muted);
-    line-height: 1.85; max-width: 560px; margin: 0 auto;
+    font-size: 1.05rem; color: var(--muted);
+    line-height: 1.9; max-width: 580px; margin: 0 auto;
   }
 
   /* DARK QUOTE STRIP */
@@ -349,35 +349,12 @@
       <p>You simply were never taught how to recognize the signs.</p>
     </div>
 
-    <div class="story-bridge">
-      <p><strong>Relationships can work the same way.</strong></p>
-      <p>Many women were never taught:</p>
-
-      <div class="signs-grid">
-        <div class="sign-card">
-          <span class="sign-icon">💚</span>
-          <span class="sign-text">What healthy love actually feels like</span>
-        </div>
-        <div class="sign-card">
-          <span class="sign-icon">🛡️</span>
-          <span class="sign-text">How to recognize emotional safety</span>
-        </div>
-        <div class="sign-card">
-          <span class="sign-icon">🚩</span>
-          <span class="sign-text">What red flags look like in real time</span>
-        </div>
-        <div class="sign-card">
-          <span class="sign-icon">🔄</span>
-          <span class="sign-text">How to identify unhealthy relationship patterns</span>
-        </div>
-      </div>
-
-      <p class="story-cycle">So they keep repeating painful cycles while blaming themselves.</p>
-    </div>
-
-    <div class="clarity-close">
-      <h3>That is what <em>the Clarity Method</em> helps with.</h3>
-      <p>It helps you understand the patterns behind your relationship choices so you can stop repeating the same painful cycles and start choosing from clarity.</p>
+    <div class="clarity-body">
+      <h2 class="clarity-heading">Relationships can work<br><em>the same way.</em></h2>
+      <p>Many women were never taught what healthy love actually feels like, how to recognize emotional safety, what real red flags look like, or how to spot unhealthy patterns before they pull them in deeper.</p>
+      <p>So they keep choosing the same kind of person. They keep ending up in the same kind of pain. And they keep blaming themselves, wondering what is wrong with them.</p>
+      <div class="about-quote">That is what the Clarity Method helps with. It helps you understand the patterns behind your relationship choices so you can stop repeating the same painful cycles and start choosing from clarity.</div>
+      <p>Because healthy love becomes possible when we stop choosing from fear — and start choosing from clarity.</p>
     </div>
   </div>
 </section>
